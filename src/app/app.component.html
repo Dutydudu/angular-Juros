@@ -1,0 +1,14 @@
+<input type="radio" id="jurosSimples" [(ngModel)]="option" [value]="1" />Juros
+Simples
+<input type="radio" id="jurosComposto" [(ngModel)]="option" [value]="2" />Juros
+Composto
+
+<h1>Opcao: {{ option }}</h1>
+
+<div *ngIf="option == '1'">
+  <app-jurossimples></app-jurossimples>
+</div>
+
+<div *ngIf="option == '2'">
+  <app-juroscomposto></app-juroscomposto>
+</div>
